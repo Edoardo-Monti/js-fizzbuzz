@@ -15,23 +15,33 @@ BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a s
 
 */
 
+let box = document.querySelector(`#griglia`)
 //stampo i numeri da 1 a 100 in console
 for(let n=1; n<=100; n++){
+   
     //console.log(n)
-    
+    let item = document.createElement(`div`)
    
     if(n % 3 == 0 && n % 5 == 0){
         console.log("FizzBuzz")
+        item.innerHTML += `FizzBuzz`
+        item.className = `col p-3 g-2 box-color`
+        box.append(item)
     } else if(n % 3 == 0){
         console.log("Fizz")
+        item.innerHTML += `Fizz`
+        item.className = `col p-3 g-2 box-color2`
+        box.append(item)
     }else if(n % 5 == 0){
         console.log("Buzz")
+        item.innerHTML += `Buzz`
+        item.className = `col p-3 g-2 box-color3`
+        box.append(item)
     }else{
          console.log(n)
+         item.innerHTML += `${n}`
+        item.className = `col p-3 g-2 box-color4`
+        box.append(item)
     }
-    
- 
-    
-    
     
 }
