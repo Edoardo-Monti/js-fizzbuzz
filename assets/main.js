@@ -25,22 +25,22 @@ for(let n=1; n<=100; n++){
     if(n % 3 == 0 && n % 5 == 0){
         console.log("FizzBuzz")
         item.innerHTML += `FizzBuzz`
-        item.className = `col p-3 g-2 box-color`
+        item.className = `col p-4 box-color`
         box.append(item)
     } else if(n % 3 == 0){
         console.log("Fizz")
         item.innerHTML += `Fizz`
-        item.className = `col p-3 g-2 box-color2`
+        item.className = `col p-4 box-color2`
         box.append(item)
     }else if(n % 5 == 0){
         console.log("Buzz")
         item.innerHTML += `Buzz`
-        item.className = `col p-3 g-2 box-color3`
+        item.className = `col p-4 box-color3`
         box.append(item)
     }else{
          console.log(n)
          item.innerHTML += `${n}`
-        item.className = `col p-3 g-2 box-color4`
+        item.className = `col p-4 box-color4`
         box.append(item)
     }
     
